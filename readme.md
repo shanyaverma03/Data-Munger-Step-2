@@ -167,7 +167,7 @@ The folders and files you see in this repositories, is how it is expected to be 
 
 1. Clone the base boilerplate in the folder **assignment-solution-step2** of your local machine
      
-    `git clone https://gitlab.stackroute.in/datamunger-java/step-1-boilerplate.git assignment-solution-step2`
+    `git clone https://gitlab.stackroute.in/stack_java_datamunging/DataMungerStep2_Boilerplate.git assignment-solution-step2`
 
 2. Navigate to assignment-solution-step2 folder
 
@@ -207,6 +207,14 @@ The folders and files you see in this repositories, is how it is expected to be 
 > - The code must not be plagirized, the mentors will randomly pick the submissions and may ask you to explain the solution
 > - The code must be properly indented, code structure maintained as per the boilerplate and properly commented
 > - Follow through the problem statement shared with you
+
+
+## MENTORS TO BEGIN REVIEW YOUR WORK ONLY AFTER ->
+
+- You add the respective Mentor as a Reporter/Master into your Assignment Repository
+- You have checked your Assignment on the Automated Evaluation Tool - Hobbes (Check for necessary steps in your Boilerplate - README.md file. ) and got the required score - Check with your mentor about the Score you must achieve before it is accepted for Manual Submission. 
+- Intimate your Mentor on Slack and/or Send an Email to learner.support@stackroute.in - with your Git URL 
+- Once you done working and is ready for final submission.
 
 ### Further Instructions on Release
 
