@@ -1,8 +1,12 @@
 package com.stackroute.datamunger.query.parser;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-/* 
+/*
  * This class will contain the elements of the parsed Query String such as conditions,
  * logical operators,aggregate functions, file name, fields group by fields, order by
  * fields, Query Type
@@ -10,35 +14,78 @@ import java.util.List;
 
 public class QueryParameter {
 
-	public String getFileName() {
-		return null;
-	}
+    private String fileName;
+    private String baseQuery;
+    private List<String> fields;
+    private List<Restriction> restrictions;
+    private List<String> logicalOperators;
+    private List<AggregateFunction> aggregateFunctions;
+    private List<String> groupByFields;
+    private List<String> orderByFields;
 
-	public String getBaseQuery() {
-		return null;
-	}
+    public String getFileName() {
+        return fileName;
+    }
 
-	public List<Restriction> getRestrictions() {
-		return null;
-	}
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
+    }
 
-	public List<String> getLogicalOperators() {
-		return null;
-	}
+    public String getBaseQuery() {
+        return baseQuery;
+    }
 
-	public List<String> getFields() {
-		return null;
-	}
+    public void setBaseQuery(String baseQuery) {
+        this.baseQuery = baseQuery;
+    }
 
-	public List<AggregateFunction> getAggregateFunctions() {
-		return null;
-	}
+    public List<String> getFields() {
+        return fields;
+    }
 
-	public List<String> getGroupByFields() {
-		return null;
-	}
+    public void setFields(List<String> fields) {
+        this.fields = fields;
+    }
 
-	public List<String> getOrderByFields() {
-		return null;
-	}
+    public List<Restriction> getRestrictions() {
+        return restrictions;
+    }
+
+    public void setRestrictions(List<Restriction> restrictions) {
+        this.restrictions = restrictions;
+    }
+
+    public List<String> getLogicalOperators() {
+        return logicalOperators;
+    }
+
+    public void setLogicalOperators(List<String> logicalOperators) {
+        this.logicalOperators = logicalOperators;
+    }
+
+    public List<AggregateFunction> getAggregateFunctions() {
+        return aggregateFunctions;
+    }
+
+    public void setAggregateFunctions(List<AggregateFunction> aggregateFunctions) {
+        this.aggregateFunctions = aggregateFunctions;
+    }
+
+    public List<String> getGroupByFields() {
+        return groupByFields;
+    }
+
+    public void setGroupByFields(List<String> groupByFields) {
+        this.groupByFields = groupByFields;
+    }
+
+    public List<String> getOrderByFields() {
+        return orderByFields;
+    }
+
+    public void setOrderByFields(List<String> orderByFields) {
+        this.orderByFields = orderByFields;
+    }
 }
+
+
